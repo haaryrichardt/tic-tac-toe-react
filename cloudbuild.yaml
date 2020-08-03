@@ -4,6 +4,3 @@ steps:
 
 - name: "gcr.io/cloud-builders/gcloud"
     args: ["app", "deploy", "app/app.yaml"]
-    
-images:
-- 'gcr.io/$PROJECT_ID/tictac-image'
