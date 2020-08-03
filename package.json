@@ -12,6 +12,8 @@
     "react-scripts": "3.4.1",
     "sweetalert2": "^9.15.1"
   },
+  "engines" : { "node" : ">=0.12" },
+  
   "homepage": "/",
   "scripts": {
     "deploy": "yarn build && ./node_modules/.bin/gh-pages -d build",
