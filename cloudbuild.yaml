@@ -3,4 +3,8 @@ steps:
   args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/tictac-image', '.' ]
 
 - name: "gcr.io/cloud-builders/gcloud"
-    args: ["app", "deploy", "app/app.yaml"]
+  args: ["app", "deploy", "app/app.yaml"]
+  
+images:
+- 'gcr.io/$PROJECT_ID/tictac-image'
+
